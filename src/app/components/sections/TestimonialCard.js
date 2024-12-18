@@ -11,44 +11,31 @@ export default function TestimonialCarousel() {
       message:
         "It's a wonderful app, where u can all IPO related data as summary in one shot. Easy to understand and it as allotment status feature too.",
       rating: 5,
-      avatar: "/user1.webp", 
+      avatar: "/user1.webp",
     },
     {
-      name: "Shailendra Goel",
-      message:
-        "This app has been a great help in keeping me updated with IPOs. Highly recommended!",
-      rating: 5,
-      avatar: "/user2.webp", 
-    },
-    {
-      name: "Vaishvik Trivedi",
-      message:
-        "Just a perfect app for every little details to every big news about upcoming and current IPOs as they provide just proper details about the company which one investor should know before investing or applying for any IPO and also few things i like about this app is that to see live subscription and also you can check your allotment too with ease. Recommended 💯💯💯💯",
-      rating: 5,
-      avatar: "/user4.webp", 
-    },
-    {
-      name: "Ankit Maheshwari",
-      message:
-        "I am using this app since 3 months. Amazing app and good app. Their gmp and live subscription feature is best and accurate. I have follows their recommend and get good earning throw ipo. Good work team of IPOJI.",
-      rating: 5,
-      avatar: "/user-4.webp", 
-    },
-    {
-      name: "Parth Shah",
-      message:
-        "I am using this app since 3 months. Amazing app and good app. Their gmp and live subscription feature is best and accurate. I have follows their recommend and get good earning throw ipo. Good work team of IPOJI.",
-      rating: 5,
-      avatar: "/user3.webp", 
-    },
+    name: "Ankit Maheshwari",
+          message:
+            "I am using this app since 3 months. Amazing app and good app. Their gmp and live subscription feature is best and accurate. I have follows their recommend and get good earning throw ipo. Good work team of IPOJI.",
+          rating: 5,
+          avatar: "/user-4.webp", 
+        },
+        {
+          name: "Parth Shah",
+          message:
+            "I am using this app since 3 months. Amazing app and good app. Their gmp and live subscription feature is best and accurate. I have follows their recommend and get good earning throw ipo. Good work team of IPOJI.",
+          rating: 5,
+          avatar: "/user3.webp", 
+        },
+    // Other testimonials...
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <div className="max-w-3xl mx-auto p-4 sm:p-6 md:p-8 text-center">
-      <div className="bg-[#FFFFFF] rounded-lg shadow-md p-6 sm:p-8 lg:h-[70vh]">
-        <div className="text-6xl sm:text-7xl lg:text-8xl text-[#FFA41B] mt-6 sm:mt-8 font-serif">
+      <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 lg:h-[70vh] flex flex-col justify-center">
+        <div className="text-6xl sm:text-7xl lg:text-8xl text-[#FFA41B] font-serif mb-4">
           "
         </div>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 text-[#0A2472] leading-relaxed">
@@ -71,7 +58,7 @@ export default function TestimonialCarousel() {
               alt={`Profile of ${testimonials[currentIndex].name}`}
               width={80}
               height={80}
-              className="object-cover"
+              className="object-cover aspect-square"
             />
           </div>
         </div>

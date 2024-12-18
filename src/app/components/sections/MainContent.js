@@ -13,9 +13,10 @@ const MainContent = () => {
       offerPrice: "420-441",
       lotSize: 34,
       subscription: "0.25 times",
+      ExpPremium: "18-19 (3.28%)",
       hasApply: true,
       description:
-        " UPI Mandate for Bids placed between 5 PM and before 10 AM will be received after 10 AM.",
+        " Pre-Apply Open. The mandate will be received when the IPO starts.",
     },
     {
       logo: "/Property.jpg",
@@ -23,9 +24,10 @@ const MainContent = () => {
       type: "Mainboard",
       // status: "Live",
       offerDate: "Dec 2, 2024 - Dec 4, 2024",
-      offerPrice: "1000000-1050000",
+      offerPrice: "1000000",
       lotSize: 1,
       subscription: "N/A times",
+      ExpPremium: "18-19 (3.28%)",
       hasApply: false,
     },
     {
@@ -37,6 +39,7 @@ const MainContent = () => {
       offerPrice: "N/A",
       lotSize: "N/A",
       subscription: "N/A times",
+      ExpPremium: "18-19 (3.28%)",
       hasApply: false,
     },
     {
@@ -48,6 +51,7 @@ const MainContent = () => {
       offerPrice: "1000000-1050000",
       lotSize: 1,
       subscription: "N/A times",
+      ExpPremium: "18-19 (3.28%)",
       hasApply: false,
     },
     {
@@ -59,26 +63,18 @@ const MainContent = () => {
       offerPrice: "1000000-1050000",
       lotSize: 1,
       subscription: "N/A times",
+      ExpPremium: "18-19 (3.28%)",
       hasApply: false,
     },
   ];
 
   return (
     <>
-      <main className="space-y-2 overflow-hidden">
+    <main className="space-y-3 overflow-hidden  md:w-[65vw]  m-0 lg:w-[63vw] 3sm:w-[120%] sm:h-[full] sm:m-2 shadow-sm">
         {ipoData.map((ipo, index) => (
           <IPOCard key={index} {...ipo} />
         ))}
-        <div className="flex justify-center relative right-9">
-          {/* <button className="px-6 py-4">
-            <a
-              href="#"
-              className="border font-bold  border-blue-700 rounded text-sky-900 px-8 py-4"
-            >
-              View All
-            </a>
-          </button> */}
-        </div>
+       
       </main>
     </>
   );

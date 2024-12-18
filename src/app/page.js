@@ -1,54 +1,92 @@
-import React from "react";
-import Navbar from "@/app/components/Navbar";
 
-import Sidebar from "@/app/components/Sidebar";
-import Header from "@/app/components/Head";
-import MainContent from "@/app/components/MainContent";
-import TopBrokers from "@/app/components/TopBrokers";
-import BuybackListing1 from "@/app/components/BuybackListing1";
-import TestimonialCard from "@/app/components/TestimonialCard";
-import Ipoji_features from "@/app/components/Ipoji_features";
-import BlogListing from "@/app/components/BlogListing";
-import TextSlider from "@/app/components/TextSlider";
-import Footer from "@/app/components/Footer";
-import SignupImg from "@/app/components/SignupImg";
-import RadioGroup from "./components/RadioGroup";
-import CarouselDemo from "./components/CarouselDemo";
-const page = () => {
+import React from "react";
+import Navbar from "@/app/components/layout/Navbar";
+import Sidebar from "@/app/components/layout/Sidebar";
+import Header from "@/app/components/layout/Head";
+import MainContent from "@/app/components/sections/MainContent";
+import TopBrokers from "@/app/components/sections/TopBrokers";
+import BuybackListing1 from "@/app/components/ui/BuybackListing1";
+import TestimonialCard from "@/app/components/sections/TestimonialCard";
+import Ipoji_features from "@/app/components/sections/Ipoji_features";
+import BlogListing from "@/app/components/ui/BlogListing";
+import TextSlider from "@/app/components/sections/TextSlider";
+import Footer from "@/app/components/layout/Footer";
+import SignupImg from "@/app/components/sections/SignupImg";
+import RadioGroup from "@/app/components/Utility/RadioGroup";
+import CarouselDemo from "./components/ui/CarouselDemo";
+import Advertising from "@/app/components/ui/Advertising";
+import Adverti from "@/app/components/sections/Adverti";
+import Playstore from "@/app/components/layout/Appstore";
+
+const Page = () => {
   return (
     <>
-      <Navbar className="z-10  bg-[#FFFFFF] " />
+      {/* Navbar */}
+      <Navbar className="z-10 bg-[#FFFFFF]" />
 
-      {/* <Main /> */}
+      {/* Carousel */}
       <CarouselDemo />
+      <div className="lg:hidden sm:block">
+        <Playstore/>
+        </div>
+
+      {/* Main Content Area */}
       <div className="bg-[#F2F4FF]">
-        <div className="container mx-auto p-9 overflow-hidden">
+        <div className="container mx-auto lg:p-9 p-4">
+          {/* Header */}
           <Header title="IPO - Initial Public Offering" />
-          <div className="gap-9 m-2 relative left-[9px]">
+
+          {/* Radio Group */}
+          <div className="gap-12 m-1 lg:relative lg:right-[4%] ">
             <RadioGroup />
           </div>
-          <div className="grid grid-cols-1  md:grid-cols-[210px_1fr]">
-            <Sidebar />
-            <MainContent />
+          <div className="flex flex-col md:flex-row">
+            <div className="w-[100px]  md:w-[210px]">
+              <Sidebar />
+            </div>
+
+            <div className="flex-1">
+              <MainContent />
+              <TopBrokers />
+            </div>
+
+            <div className="w-full md:w-[300px] relative right-[50px]">
+              <Advertising />
+            </div>
           </div>
         </div>
 
-        <TopBrokers />
-        <BuybackListing1 />
+       
+        <div className="">
+          <BuybackListing1 />
+        </div>
+
+        {/* Testimonials */}
         <TestimonialCard />
+
+        {/* Signup Image */}
         <SignupImg />
+
+        {/* IPOJI Features */}
         <Ipoji_features />
       </div>
 
+      {/* Blog Section */}
       <main>
         <BlogListing />
       </main>
+
+      {/* Text Slider */}
       <div className="bg-[#F2F4FF]">
         <TextSlider />
       </div>
+
+      <Adverti />
+
+      {/* Footer */}
       <Footer />
     </>
   );
 };
 
-export default page;
+export default Page;

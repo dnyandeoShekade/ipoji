@@ -1,29 +1,35 @@
 
-import React from 'react';
-import Image from 'next/image';
+
+import React from "react";
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
+} from "@/components/ui/carousel";
 
 const CarouselDemo = () => {
-  const images = ['/ipoji_1.webp', '/ipoji_2.webp', '/ipoji_3.webp'];
+  const images = ["/ipoji_1.webp", "/ipoji_2.webp", "/ipoji_3.webp"];
 
   return (
-    <div className="relative w-full">
-      <Carousel className="relative lg:w-full">
+    <div className="relative w-full flex justify-center bg-[#D0EDFF]">
+      <Carousel className="relative w-full xl:w-[1173px] lg:w-[1100px] md:w-[770px] sm:w-[640px]">
         <CarouselContent>
           {images.map((src, index) => (
-            <CarouselItem key={index}>
-              <div className="relative w-full aspect-[16/9] lg:h-[41vh] h-[10vh] md:h-[26vh] sm:h-[18vh] rounded-lg overflow-hidden shadow-md">
+            <CarouselItem key={index} className="w-full">
+              <div
+                className="
+                  relative w-full
+                  h-[10vh] sm:h-[20vh] md:h-[25vh] lg:h-[30vh] xl:h-[242px] 
+                  bg-white rounded-lg overflow-hidden shadow-md"
+              >
                 <Image
                   src={src}
                   alt={`Slide ${index + 1}`}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             </CarouselItem>

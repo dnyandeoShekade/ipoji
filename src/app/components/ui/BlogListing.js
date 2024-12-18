@@ -1,4 +1,3 @@
-
 import React from "react";
 import BlogCard from "./BlogCard";
 import BlogCardRow from "./BlogCardRow";
@@ -8,42 +7,48 @@ const BlogListing = () => {
     {
       title: "IPO Pipeline for December 2024",
       date: "November 30, 2024 at 01:59 PM",
-      excerpt: "The businesses are using the primary market to meet working capital needs...",
+      excerpt:
+        "The businesses are using the primary market to meet working capital needs...",
       image: "/blog-1.jpg?height=200&width=300",
       link: "#",
     },
     {
       title: "Breaking Records! Indian Startups Take IPOs by Storm",
       date: "November 29, 2024 at 04:28 PM",
-      excerpt: "New-age tech startups like Swiggy, Go Digit, TBO Tek, Awfis, Ola Electric...",
+      excerpt:
+        "New-age tech startups like Swiggy, Go Digit, TBO Tek, Awfis, Ola Electric...",
       image: "/blog-2.jpg?height=200&width=300",
       link: "#",
     },
     {
       title: "IPO Calendar for December 2024: Upcoming IPOs in India",
       date: "November 29, 2024 at 02:29 PM",
-      excerpt: "The Indian primary stock market is going to experience a lot of interesting IPO activities in December 2024...",
+      excerpt:
+        "The Indian primary stock market is going to experience a lot of interesting IPO activities in December 2024...",
       image: "/calender.jpg?height=200&width=300",
       link: "#",
     },
     {
       title: "Suraksha Diagnostic IPO Details: Price Band, GMP, Review",
       date: "November 27, 2024 at 03:25 PM",
-      excerpt: "Suraksha Diagnostic IPO comprises a pure Offer-for-Sale of 19,189,330 equity shares worth Rs 846.25 crore...",
+      excerpt:
+        "Suraksha Diagnostic IPO comprises a pure Offer-for-Sale of 19,189,330 equity shares worth Rs 846.25 crore...",
       image: "/blog-2.jpg?height=200&width=300",
       link: "#",
     },
     {
       title: "IPO Pipeline for December 2024: Rs 15,000 Crore",
       date: "November 26, 2024 at 02:46 PM",
-      excerpt: "The businesses are using the primary market to meet working capital needs, generate money for expansion...",
+      excerpt:
+        "The businesses are using the primary market to meet working capital needs, generate money for expansion...",
       image: "/calender.jpg?height=200&width=300",
       link: "#",
     },
     {
       title: "Suraksha Diagnostic sets IPO price band at Rs 418-441/share",
       date: "November 26, 2024 at 11:25 PM",
-      excerpt: "The investor OrbiMed-backed company targets to raise around Rs 253 crore via...",
+      excerpt:
+        "The investor OrbiMed-backed company targets to raise around Rs 253 crore via...",
       image: "/colblog.jpg?height=200&width=300",
       link: "#",
     },
@@ -57,7 +62,8 @@ const BlogListing = () => {
     {
       title: "Breaking Records! Indian Startups Take IPOs by Storm",
       date: "November 26, 2024 at 11:06 AM",
-      excerpt: "New-age tech startups like Swiggy, Go Digit, TBO Tek, Awfis, Ola Electric, FirstCry, ixigo, and Unicommerce...",
+      excerpt:
+        "New-age tech startups like Swiggy, Go Digit, TBO Tek, Awfis, Ola Electric, FirstCry, ixigo, and Unicommerce...",
       image: "/blog-2.jpg?height=200&width=300",
       link: "#",
     },
@@ -98,4 +104,3 @@ const BlogListing = () => {
 };
 
 export default BlogListing;
-
